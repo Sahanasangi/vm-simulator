@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Try Demo - VM Simulator OS</title>
+    <title>Demo - VM Simulator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
+
+     <!-- Loading Screen -->
+     <div id="loading-screen">Loading...</div>
+
+     <!-- Dark Mode Toggle -->
+     <button id="darkModeToggle">🌙</button>
+     
     <header>
-        <h1>Try the Virtual Machine Simulator</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="demo.html">Try Demo</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="features.html" class="nav-btn">Features</a></li>
+                <li><a href="demo.html" class="nav-btn">Demo</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Launch Virtual Machine</h2>
-        <button onclick="openVMSimulator()">Start VM</button>
-    </section>
+    <h1>Demo</h1>
+    <p class="floating">Watch the Virtual Machine Simulator in action!</p>
 
-    <footer>
-        <p>&copy; 2025 VM Simulator OS</p>
-    </footer>
+    <section class="vm-video">
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            title="VM Simulator Demo" frameborder="0" allowfullscreen></iframe>
+    </section>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font: italic 1.2rem "Fira Sans", serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+}
+
+
+
+/* Dark Mode Variables */
+:root {
+    --bg-color: #0f2027;
+    --text-color: white;
+    --btn-color: #00c3ff;
+}
+
+.dark-mode {
+    --bg-color: white;
+    --text-color: black;
+    --btn-color: #ff6600;
+}
+
+/* Navbar */
+/* Navbar */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Navbar Buttons */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    background: var(--btn-color);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 5px 10px rgba(0, 195, 255, 0.5);
+}
+
+/* 3D Hover Effect */
+.nav-btn:hover {
+    background: #0095cc;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 195, 255, 0.7);
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Floating Animation */
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Animated Buttons */
+button {
+    background: var(--btn-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: #0095cc;
+    transform: translateY(-3px);
+}
+
+/* Dark Mode Button */
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--btn-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 9999;
+    animation: fadeOut 1s ease-out 3s forwards;
+}
+
+@keyframes fadeOut {
+    100% { opacity: 0; visibility: hidden; }
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 15% auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.features {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.feature {
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: rgba(57, 250, 23, 0.895);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: rgb(247, 0, 255);
+}

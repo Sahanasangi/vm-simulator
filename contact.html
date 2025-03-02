@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - VM Simulator OS</title>
+    <title>Contact - VM Simulator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+     
+
+     <!-- Dark Mode Toggle -->
+     <button id="darkModeToggle">🌙</button>
+
     <header>
-        <h1>Contact Us</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="demo.html">Try Demo</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="features.html" class="nav-btn">Features</a></li>
+                <li><a href="demo.html" class="nav-btn">Demo</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Get in Touch</h2>
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <h1>Contact Us</h1>
+    <p>Email: support@vmsimulator.com</p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
+    <section class="contact">
+        
+        <p class="floating">Have questions or feedback? Reach out to us!</p>
+    
+        <form id="contact-form" action="https://formspree.io/f/mbldnkea" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
+    
+        <div id="response-message"></div>
+
+        <div class="social-links">
+            <p class="floating">follow me! guys -_-</p>
+            <a href="https://x.com/herMoonshinex" target="_blank">Twitter</a> |
+            <a href="https://github.com/Sahanasangi/vm-simulator" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/sahana-a-2a9902347/" target="_blank">LinkedIn</a>
+        </div>
+        
     </section>
 
-    <footer>
-        <p>&copy; 2025 VM Simulator OS</p>
-    </footer>
+    <p>Believe you can and you're halfway there.</p>
+    <p>-Theodore Roosevelt</p>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
+

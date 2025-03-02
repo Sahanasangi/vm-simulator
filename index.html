@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VM Simulator OS</title>
+    <title>VM Simulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle">🌙</button>
+
+
+
+    <!-- Navbar -->
     <header>
-        <h1>Virtual Machine Simulator OS</h1>
-        <p>Experience the future of virtualization.</p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="demo.html">Try Demo</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="features.html" class="nav-btn">Features</a></li>
+                <li><a href="demo.html" class="nav-btn">Demo</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
 
-    <section>
-        <h2>Welcome to VM Simulator OS</h2>
-        <p>This project is designed to simulate a virtual machine, helping users understand virtualization, OS development, and system-level programming.</p>
-    </section>
+    <!-- Typing Effect Title -->
+    <h1 id="typing-title"></h1>
 
-    <footer>
-        <p>&copy; 2025 VM Simulator OS</p>
-    </footer>
+    <p class="floating">Experience a powerful Virtual Machine Simulator!</p>
+    
+
+    
+    <button class="btn" onclick="openTutorial()">Get Started</button>
+
+<div id="tutorial-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeTutorial()">&times;</span>
+        <h2>Welcome to VM Simulator</h2>
+        <p>Use this simulator to understand how virtual machines work. Click 'Demo' to begin.</p>
+        <a href="demo.html" class="btn">Go to Demo</a>
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
+
 

@@ -3,36 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features - VM Simulator OS</title>
+    <title>Features - VM Simulator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+     
+
+     <!-- Dark Mode Toggle -->
+     <button id="darkModeToggle">🌙</button>
+
     <header>
-        <h1>Features</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="demo.html">Try Demo</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="features.html" class="nav-btn">Features</a></li>
+                <li><a href="demo.html" class="nav-btn">Demo</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Core Features</h2>
-        <ul>
-            <li>Custom-built lightweight OS</li>
-            <li>CPU & Memory Emulation</li>
-            <li>Basic File System & I/O Handling</li>
-            <li>Simple Shell Interface</li>
-            <li>Virtual Disk & Storage Management</li>
-            <li>Networking Support (Future Update)</li>
-        </ul>
-    </section>
+    <h1>Features</h1>
+    <p class="floating">Explore the powerful features of our Virtual Machine Simulator.</p>
 
-    <footer>
-        <p>&copy; 2025 VM Simulator OS</p>
-    </footer>
+    <section class="features">
+        <h1>Key Features of Our Virtual Machine Simulator</h1>
+    
+        <div class="feature">
+            <h2>💻 Realistic Virtual Machine Simulation</h2>
+            <p>Experience a real virtual machine environment inside your browser, powered by WebAssembly.</p>
+        </div>
+    
+        <div class="feature">
+            <h2>🖥️ Linux Command Execution</h2>
+            <p>Run basic Linux commands like <code>ls</code>, <code>echo</code>, and <code>date</code> right inside the VM.</p>
+        </div>
+    
+        <div class="feature">
+            <h2>⚡ Smooth Animations & UI</h2>
+            <p>Enjoy a modern, interactive UI with smooth transitions, hover effects, and a parallax background.</p>
+        </div>
+    
+        <div class="feature">
+            <h2>🌙 Dark Mode Support</h2>
+            <p>Toggle between Light and Dark Mode for a better viewing experience.</p>
+        </div>
+    
+        <div class="feature">
+            <h2>📡 Online & Offline Access</h2>
+            <p>Use the simulator anywhere—no installation required!</p>
+        </div>
+    
+    </section>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
